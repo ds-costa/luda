@@ -38,7 +38,7 @@ Projeto compatível com sistemas operacionais baseados em unix. Insira os seguin
     - Instale o pacote build-essential
 ```bash
  sudo apt install build-essential
-``
+```
 
 ## Contribuidores
 
