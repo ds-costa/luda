@@ -39,6 +39,12 @@ EOE_OPERATOR ";"
     token_id++;
 }
 
+
+{INTEGER_NUMBER}+{IDENTIFIER} {
+    printf("ll> TOKEN_ID: N/A, LINE: %d, TOKEN TYPE: N/A, VALUE: %s\n", current_line, yytext);
+    number_of_errors++;
+}
+
 {INTEGER_NUMBER} {
     ll_log_tokendata(token_id, current_line, "INTEGER_NUMBER", yytext);
     token_id++;
