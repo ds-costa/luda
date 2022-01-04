@@ -1,0 +1,32 @@
+@procedure_begin
+
+// funções com parametros
+func sum(int a, int b) int {
+    return a + b;
+}
+
+func str_concat(string a, string  b) string {
+    return a + b;
+}
+
+//funções sem parametros 
+func foo() int {
+    return 2022;
+} 
+
+//função void
+func bar() {
+
+    // declaração e atribuição de variáveis
+    int sum = 0;
+
+    // loops
+    for(int i = 0; i < 100; i = i + 1) {
+        sum = sum + i;
+    }
+
+    // chamada de função
+    print(sum);
+}
+
+@procedure_end

@@ -1,10 +1,11 @@
 # Luda Language
 
-Análisador léxico e sintático para linguagem prova de conceito Luda.
+Analisador léxico e sintático para linguagem prova de conceito Luda.
 
 ## Requisitos (Pacotes)
 
 * Flex (Fast Lexical Analyzer Generator)
+* Bison
 * GNU Make
 * GCC
 
@@ -24,12 +25,24 @@ Projeto compatível com sistemas operacionais baseados em unix. Insira os seguin
 ```bash
  sudo apt install gcc
 ```
+* Bison 
+```bash
+ sudo apt install bison
+```
 
 ## Executando o projeto
 
-* Crie um arquivo de entrada com a extensão .luda no diretório src/ ou utilize o arquivo de exemplo src/sample.luda e o especifique no argumento input:
+* Faça a compilação do projeto com o make:
 ```bash
- make -f lexer/makefile input=src/sample.luda 
+ make 
+```
+* Crie um arquivo de entrada com a extensão .luda no diretório src/ ou utilize o arquivo de exemplo src/main.luda e execute o analisador com o seguinte comando:
+```
+ ./luda <arquivo de entrada>
+```
+* Exemplo:
+```
+ ./luda src/main.luda
 ```
 
 ## Solução de problemas
